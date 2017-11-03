@@ -1,0 +1,11 @@
+.nav_logo{
+  font-weight: 600;
+}
+.nav_links-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.nav_link{
+  color: coral;
+  cursor: pointer;
+}
