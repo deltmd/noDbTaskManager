@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Test from './Components/Test/Test.js';
+// import Test from './Components/Test/Test.js';
 import Nav from './Components/Nav/Nav.js';
 import All from './Components/All/All.js';
 import Create from './Components/Create/Create.js';
@@ -10,7 +10,7 @@ class App extends Component {
     super()
     this.state={
       all: false,
-      create: false
+      create: true
     }
     this.allSetter = this.allSetter.bind(this);
     this.createSetter = this.createSetter.bind(this);
@@ -34,8 +34,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Test/>
-        <Nav nav1="URGENT" nav2="ALL" nav3="CREATE" nav4="GROUPS" nav5="SCHEDULED" fun1={this.allSetter} fun2={this.createSetter}/>
+        {/* <Test/> */}
+        <Nav nav1="ALL" nav2="CREATE" nav3="GROUPS" fun1={this.allSetter} fun2={this.createSetter}/>
         {this.state.all && <All />}
         {this.state.create && <Create />}
       </div>

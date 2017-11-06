@@ -1,0 +1,26 @@
+.meme-background{
+  background: black;
+  width: 50%;
+  width: 475px;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-to-save{
+  width: 475px;
+  object-fit: contain;
+}
+.meme-wrapper{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-arrow-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 20px 0 20px 0;
+}
